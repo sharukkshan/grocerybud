@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3ad73a;
+}
+
+.main-section {
+  height: 60vh; /* Adjusted height to accommodate the added items */
+  width: 50vw;
+  background-color: #a00f23;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.input-btn {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-btn input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.input-btn button {
+  padding: 10px 20px;
+  background-color: #645CFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-btn button:hover {
+  background-color: #4b44d6;
+}
+
+.item-list {
+  width: 100%;
+  margin-top: 20px;
+  overflow-y: auto; /* To handle overflow if items exceed container height */
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.item span {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.item .done {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.item button {
+  background-color: #e91515;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+  background-color: #c11212;
+}
+
+.item input[type="checkbox"] {
+  cursor: pointer;
+}
+
+@media (max-width:700px ){
+  .input-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
